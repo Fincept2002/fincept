@@ -15,8 +15,13 @@
     header {
       background: #00274d;
       color: gold;
-      padding: 40px 20px;
+      padding: 20px 20px 40px 20px;
       text-align: center;
+    }
+    header img {
+      max-width: 150px;
+      display: block;
+      margin: 0 auto 10px auto;
     }
     header h1 {
       margin: 0;
@@ -41,17 +46,22 @@
     }
     .section {
       padding: 30px 20px;
-      max-width: 800px;
+      max-width: 1000px;
       margin: auto;
       background: white;
       margin-top: 20px;
       border-radius: 8px;
       box-shadow: 0 2px 5px rgba(0,0,0,0.1);
     }
+    .reviews {
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
     .reviews img {
-      max-width: 100%;
+      max-width: 30%;
       border-radius: 8px;
-      margin-bottom: 10px;
     }
     .line-button {
       position: fixed;
@@ -60,8 +70,8 @@
       z-index: 100;
     }
     .line-button img {
-      width: 60px;
-      height: 60px;
+      width: 50px;
+      height: 50px;
     }
     footer {
       text-align: center;
@@ -74,8 +84,9 @@
 <body>
 
 <header>
+  <img src="LOGO.jpg" alt="Fincept Capital Logo">
   <h1>Fincept Capital</h1>
-  <p> ที่ปรึกษาการเงินธุรกิจ รวดเร็ว ปลอดภัย</p>
+  <p>ผู้เชี่ยวชาญด้านที่ปรึกษาการเงินธุรกิจ ครบวงจร</p>
 </header>
 
 <nav>
@@ -88,13 +99,10 @@
 
 <div class="section" id="home">
   <h2>หน้าแรก</h2>
-  <p>Fincept Capital ให้คำปรึกษาด้านการเงินสำหรับธุรกิจทุกขนาด
-จัดหาแหล่งทุนและสินเชื่อที่ตอบโจทย์ธุรกิจคุณ
-บริการรวดเร็ว ปลอดภัย ไว้วางใจได้
-พร้อมทีมงานผู้เชี่ยวชาญกว่า 10 ปี
-เคียงข้างคุณทุกความต้องการทางการเงิน
-ให้คำปรึกษาฟรี ทุกขั้นตอน</p>
-  <p><a href="https://lin.ee/nv03mzy" target="_blank">เพิ่มเพื่อน LINE</a> | โทร: [ใส่เบอร์โทรของคุณ]</p>
+  <p>เรามีประสบการณ์ในด้านการให้คำปรึกษาการเงินธุรกิจมาตั้งแต่ปี 2002 ให้บริการด้วยความจริงใจและมาตรฐานที่คุณไว้วางใจได้</p>
+  <p>ได้รับความไว้วางใจจากบริษัททั้งในและต่างประเทศ ที่ร่วมงานกับเราในฐานะพาร์ทเนอร์ด้านการเงินธุรกิจ</p>
+  <p>ตอบโจทย์ธุรกิจทุกขนาด ด้วยแผนการเงินที่ปรับให้เหมาะกับความต้องการของคุณ</p>
+  <p>ทีมงานพร้อมตอบทุกคำถาม และสามารถประชุมร่วมวางแผนการเงินได้ถึงที่</p>
 </div>
 
 <div class="section" id="services">
@@ -108,29 +116,29 @@
 
 <div class="section" id="about">
   <h2>เกี่ยวกับเรา</h2>
-  <p>เรามีทีมงานมืออาชีพมากประสบการณ์กว่า 10 ปี ในการให้คำปรึกษาและจัดหาแหล่งทุนธุรกิจ พร้อมบริการที่รวดเร็วและปลอดภัย</p>
+  <p>Fincept Capital เริ่มดำเนินธุรกิจตั้งแต่ปี 2002 เรามีทีมงานมืออาชีพมากประสบการณ์กว่า 20 ปี ที่พร้อมให้คำแนะนำการจัดหาแหล่งทุนและสินเชื่ออย่างตรงจุด</p>
 </div>
 
 <div class="section reviews" id="reviews">
   <h2>รีวิว / ความสำเร็จลูกค้า</h2>
-  <p><strong>โรงงานบรรจุภัณฑ์</strong></p>
-  <img src="w1.png" alt="โรงงานบรรจุภัณฑ์">
-  <p><strong>บริษัทสายงานผลิต</strong></p>
-  <img src="w2.png" alt="บริษัทสายงานผลิต">
-  <p><strong>เจ้าของธุรกิจระหว่างประเทศ</strong></p>
-  <img src="w3.png" alt="เจ้าของธุรกิจระหว่างประเทศ">
+  <div>
+    <img src="w1.png" alt="โรงงานบรรจุภัณฑ์">
+    <img src="w2.png" alt="บริษัทสายงานผลิต">
+    <img src="w3.png" alt="เจ้าของธุรกิจระหว่างประเทศ">
+  </div>
 </div>
 
 <div class="section" id="contact">
   <h2>ช่องทางติดต่อ</h2>
   <p>เพิ่มเพื่อน LINE: <a href="https://lin.ee/nv03mzy" target="_blank">@150idjvw</a></p>
+  <p>Facebook Page: <a href="https://facebook.com/FinceptCapital" target="_blank">Fincept Capital</a></p>
   <p>โทร: [ใส่เบอร์โทรของคุณ]</p>
   <p>อีเมล: <a href="mailto:Finceptc@gmail.com">Finceptc@gmail.com</a></p>
 </div>
 
 <div class="line-button">
   <a href="https://lin.ee/nv03mzy" target="_blank">
-    <img src="https://scdn.line-apps.com/n/line_add_friends/btn/en.png" alt="Add LINE">
+    <img src="https://scdn.line-apps.com/n/line_add_friends/btn/th.png" alt="Add LINE">
   </a>
 </div>
 
