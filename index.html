@@ -95,7 +95,51 @@
       color: #666;
       padding: 20px;
     }
-  </style>
+  
+  .disclaimer-banner {
+    background: #fff3cd;
+    color: #856404;
+    border: 1px solid #ffeeba;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    font-size: 0.95em;
+  }
+  .faq {
+    background: #f9f9f9;
+    padding: 1em;
+    border-radius: 6px;
+    margin-top: 1em;
+  }
+  .modal {
+    display: none;
+    position: fixed;
+    z-index: 9999;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.5);
+  }
+  .modal-content {
+    background-color: #fff;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 90%;
+    max-width: 500px;
+    border-radius: 8px;
+    text-align: center;
+  }
+  .close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+</style>
 </head>
 <body>
 
@@ -130,6 +174,60 @@
   </ul>
 </div>
 
+
+<div class="section" id="funding">
+  <div class="disclaimer-banner">
+    ⚠️ <strong>คำชี้แจง:</strong> Fincept Capital เป็นผู้ให้คำปรึกษาและจัดหาแหล่งทุนเท่านั้น <br>
+    ไม่มีการปล่อยกู้หรืออนุมัติสินเชื่อโดยตรง และไม่เก็บค่าดำเนินการล่วงหน้า
+  </div>
+
+  <h2>แหล่งเงินทุนสำหรับธุรกิจ SME</h2>
+  <p>Fincept Capital เป็นผู้ให้คำปรึกษาทางการเงิน ที่มุ่งเน้นการแนะนำและจัดหาแหล่งเงินทุนที่เหมาะสมสำหรับผู้ประกอบการ SME และเจ้าของกิจการ โดยเราไม่ให้บริการสินเชื่อหรือปล่อยกู้โดยตรง</p>
+
+  <h3>ทำความเข้าใจเรื่อง "การกู้เงิน"</h3>
+  <p>การกู้เงิน หรือการขอสินเชื่อ คือการยืมเงินจากผู้ให้บริการทางการเงิน เช่น ธนาคาร บริษัทสินเชื่อ หรือแพลตฟอร์มระดมทุน โดยต้องมีการชำระคืนพร้อมดอกเบี้ยตามเงื่อนไขที่ตกลงกันไว้</p>
+  <p>ประเภทของสินเชื่อมีหลากหลาย เช่น สินเชื่อหมุนเวียน, OD (เบิกเกินบัญชี), สินเชื่อเงินสด, สินเชื่อสำหรับผู้ประกอบการ, และการระดมทุนแบบ Crowdfunding หรือ P2P</p>
+
+  <h3>Fincept Capital ช่วยอะไรคุณได้?</h3>
+  <ul>
+    <li>ให้คำแนะนำเกี่ยวกับแหล่งเงินทุนที่เหมาะสมกับกิจการ</li>
+    <li>ประสานงานกับแหล่งทุนที่น่าเชื่อถือ</li>
+    <li>ไม่มีค่าดำเนินการล่วงหน้า และไม่มีการเรียกเก็บเงินก่อนทุกกรณี</li>
+  </ul>
+
+  <h3>คำถามที่พบบ่อย</h3>
+  <div class="faq">
+    <strong>Q: เงินทุนธุรกิจคืออะไร?</strong><br>
+    A: คือเงินที่ใช้ดำเนินธุรกิจ ทั้งในรูปแบบเงินกู้หรือเงินลงทุนจากแหล่งต่าง ๆ
+  </div>
+  <div class="faq">
+    <strong>Q: ต้องโอนเงินก่อนหรือไม่?</strong><br>
+    A: ไม่ต้อง Fincept ไม่มีนโยบายเรียกเก็บค่าดำเนินการก่อน
+  </div>
+  <div class="faq">
+    <strong>Q: SME ที่ไม่มีหลักทรัพย์ค้ำประกันจะขอได้ไหม?</strong><br>
+    A: ได้ เรามีหลายแหล่งทุนที่ไม่ต้องใช้หลักทรัพย์
+  </div>
+
+  <p><small><strong>หมายเหตุ:</strong> Fincept Capital ไม่มีส่วนเกี่ยวข้องกับการอนุมัติสินเชื่อโดยตรง และไม่ใช่ผู้ให้กู้หรือบริษัทสินเชื่อตามนิยามในกฎหมาย เราเป็นเพียงผู้ให้คำแนะนำและเชื่อมต่อคุณกับแหล่งทุนที่เชื่อถือได้เท่านั้น</small></p>
+
+  <a href="#" onclick="document.getElementById('modal').style.display='block'; return false;" class="line-button-cta">
+    <strong>→ ปรึกษาเงินทุนกับทีมงาน คลิกที่นี่</strong>
+  </a>
+</div>
+
+<div id="modal" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="document.getElementById('modal').style.display='none';">&times;</span>
+    <p><strong>คุณกำลังจะพูดคุยกับผู้ให้คำปรึกษา</strong><br>
+    โปรดทราบว่าเราไม่มีนโยบายเรียกเก็บเงินล่วงหน้า และไม่ใช่ผู้ปล่อยกู้โดยตรง</p>
+    <a href="https://line.me/ti/p/nv03mzy" target="_blank" onclick="gtag('event','conversion',{'send_to':'AW-17287753812/JjfACMuz2usaENTguLNA'});">
+      คลิกเพื่อแอด LINE และเริ่มพูดคุย
+    </a>
+  </div>
+</div>
+
+
 <div class="section" id="about">
   <h2>เกี่ยวกับเรา</h2>
   <p>Fincept Capital เริ่มดำเนินธุรกิจตั้งแต่ปี 2002 เรามีทีมงานมืออาชีพมากประสบการณ์กว่า 20 ปี ที่พร้อมให้คำแนะนำการจัดหาแหล่งทุนและสินเชื่ออย่างตรงจุด</p>
@@ -162,5 +260,14 @@
   &copy; 2025 Fincept Capital. All rights reserved.
 </footer>
 
+
+<script>
+  window.onclick = function(event) {
+    const modal = document.getElementById('modal');
+    if (event.target == modal) {
+      modal.style.display = "none";
+    }
+  }
+</script>
 </body>
 </html>
